@@ -1,0 +1,615 @@
+
+@font-face {
+  font-family: 'Hakgyoansim usan';
+  /* src: url('./HakgyoansimUsanR.ttf') format('truetype'); */
+  font-weight: normal;
+  font-style: normal;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: 'Hakgyoansim usan', sans-serif;
+  background-image: url('레이아웃1.png');
+  background-size: cover;
+  background-position: center;
+  background-color: #20222B;
+}
+
+#wrap {
+  background-color: #2A2F4A;
+  width: 1300px;
+  height: 720px;
+  margin: 0 auto;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  position: relative; /* #wrap을 기준으로 #house 위치 지정 */
+}
+
+/*
+@media (max-width: 1200px) {
+  #wrap {
+    width: 100%;
+    height: 600px;
+  }
+
+  #back2 {
+    width: 100%;
+  }
+
+  #back2_2 {
+    width: 100%;
+  }
+
+  #han1,
+  #han2,
+  #han3,
+  #han4,
+  #han5,
+  #han6,
+  #han7,
+  #han8 {
+    font-size: 10px;
+  }
+  
+  #header {
+    margin-top: 30px;
+    width: 100%; 
+    max-width: 1300px; 
+    height: 70px;
+    background-color: #2A2F4A;
+    position: relative;
+    border-radius: 10px;
+  }
+  
+  #header_name {
+    width: 1200px;
+    height: 80px;
+    left: 50%; 
+    transform: translateX(-50%);
+    top: 20px;
+    background-color: #070E30;
+    border-radius: 10px;
+  }
+
+  #one1 {
+    width: 100px;
+    height: 100px; 
+    left: 280px; 
+    top: 100px; 
+  }
+
+  #one2 {
+    width: 60px;
+    height: 60px; 
+    left: 330px; 
+    top: 180px; 
+  }
+
+
+
+  #bottom {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom : 20px;
+    width: calc(100% - 40px);
+    max-width: 600px;
+    height: auto;
+    background-color: #575C74;
+    border-radius: 10px;
+  }
+  
+  #bottom_name {
+    width: calc(100% - 40px); 
+    max-width: 600px;
+    height: 25px;
+    background-color: #070E30;
+  }
+
+  #rside_name {
+  width: 100%; 
+  max-width: 275px;
+  height: 25px;
+  background-color: #070E30;
+}
+
+#rside_name2 {
+  position: relative;
+  color: white; 
+  font-size: 12px;
+  width: 100%; 
+  max-width: 275px; 
+  height: 25px;
+  top : 7px;
+  left: 15px;
+  background-color: #a7b0df00;
+}
+
+#wrap {
+  width: 100%;
+  height: 600px;
+}
+
+#header {
+  width: 100%;
+}
+
+#header_name {
+  width: 100%;
+}
+
+#back2_2 {
+  width: 100%;
+  right: 0;
+}
+
+#lside,
+#lside2,
+#lside3,
+#rside {
+  width: calc(50% - 24px);
+}
+
+#bottom {
+  width: calc(100% - 24px);
+  left: 12px;
+}
+
+}*/
+
+#one1 {
+  background: #DDDDDD;
+  position: absolute;
+  width: 120px;
+  height: 120px;
+  left : 350px;
+  top : 120px;
+  border-radius: 90px;
+}
+
+#one2 {
+  background: #DDDDDD;
+  position: absolute;
+  width: 80px;
+  height: 80px;
+  left : 410px;
+  top : 210px;
+  border-radius: 90px;
+}
+
+#animal {
+  left : -3px;
+  bottom : 53px;
+  position: absolute;
+  width: 110px;
+  height: 50px;
+  background-color: #9599b200;
+  background-image: url('그림3.png');
+  background-size: cover;
+  background-position: center;
+}
+
+#ciga {
+  position: absolute;
+  width: 55px;
+  height: 55px;
+  bottom : 12px;
+  left: 12px;
+  background-color: #9599b200;
+  background-image: url('담배.png');
+  background-size: cover;
+  background-position: center;
+}
+
+#precautions {
+  position: absolute;
+  font-size: 14px;
+  top:33px;
+  left: 33px;
+}
+
+#house {
+  width: 600px;
+  height: 150px;
+  background-color: #9599b200;
+  position: absolute;
+  top: 49%;
+  left: 50%;
+  background-image: url('지붕.png');
+  background-size: cover;
+  background-position: center;
+  transform: translate(-50%, -50%);
+}
+
+/* 미디어 쿼리를 사용하여 반응형 디자인 적용 */
+@media (max-width: 1200px) {
+  #wrap {
+    width: 100%;
+    height: 600px;
+  }
+}
+
+#header {
+  margin-top: 30px;
+  width: 1300px;
+  height: 70px;
+  background-color: #2A2F4A;
+  position: relative; /* 위치 지정을 위해 부모 요소로부터의 상대적 위치를 설정. */
+  border-radius: 10px;
+}
+
+#header_name{
+  width: 1200px;
+  height: 80px;
+  left: 100px;
+  position: absolute; /* 위치 지정을 위해 절대적으로 설정. */
+  top: 20px; /* 헤더의 상단으로부터 30px 아래에 위치하도록 */
+  background-color: #070E30;
+  transform: translateX(-50px); /* -x축으로 이동시키기 */
+  border-radius: 10px;
+}
+
+#rain{
+  width: 30px;
+  height: 30px;
+  left: 30px;
+  top : 10px;
+  position: absolute;
+  background-image: url('비.png');
+  background-size: cover;
+  background-position: center;
+  background-color: #76252500;
+}
+
+#star1{
+  position: absolute;
+  background-image: url('별똥별.png');
+  background-size: cover;
+  background-position: center;
+  width: 40px;
+  height: 40px;
+  left: 380px;
+  top: 18px;
+}
+
+#star2{
+  position: absolute;
+  color: white;
+  font-size: 30px;
+  left: 430px;
+  top: 25px;
+}
+
+#warning {
+  position: absolute;
+  background-image: url('경고.png');
+  background-size: cover;
+  background-position: center;
+  width: 65px;
+  height: 65px;
+  left: 268px;
+  bottom: 310px;
+}
+
+#warning2 {
+  position: absolute;
+  color: #FF6464;
+  font-size: 13px;
+  width: 120px;
+  height: 14px;
+  left: 245px;
+  bottom: 293px;
+  background-color: #ffffff00;
+}
+
+#weather-info {
+  color: white; /* 폰트 색 바꾸는 법ㅠ */
+  font-size: 10px;
+  margin-top: 47px;
+  width: 200px;
+  height: 40px;
+  margin-left: 25px;
+  background-color: #ffffff00;
+}
+
+#back2 {
+  width: 700px;
+  height: 260px;
+  margin: 0 auto;
+  background-color: #ccd1ed00; /* 기숙사 추가할 부분 */
+  margin-top: 20px; /* 위쪽 마진 추가 */
+  margin-bottom: 20px; /* 아래쪽 마진 추가 */
+  border-radius: 10px;
+}
+
+#back2_2 {
+  box-sizing: border-box;
+  width: 430px;
+  height: 140px;
+  background: #070E30;
+  border: 1px solid #99B0F9;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+  position: absolute;
+  top: 120px;
+  right: 350px;
+  /* Line 5 */
+}
+
+#han1 {
+  position: absolute;
+  font-size: 12px;
+  top : 30px;
+  left: 45px;
+  color: #ffffff;
+}
+
+#han2 {
+  position: absolute;
+  font-size: 12px;
+  top : 30px;
+  left: 153px;
+  color: #ffffff;
+}
+
+#han3 {
+  position: absolute;
+  font-size: 12px;
+  top : 30px;
+  left: 261px;
+  color: #ffffff;
+}
+
+#han4 {
+  position: absolute;
+  font-size: 12px;
+  top : 30px;
+  left: 367px;
+  color: #ffffff;
+}
+
+#han5 {
+  position: absolute;
+  font-size: 12px;
+  top : 100px;
+  left: 45px;
+  color: #ffffff;
+}
+
+#han6 {
+  position: absolute;
+  font-size: 12px;
+  top : 100px;
+  left: 153px;
+  color: #ffffff;
+}
+
+#han7 {
+  position: absolute;
+  font-size: 12px;
+  top : 100px;
+  left: 261px;
+  color: #ffffff;
+}
+
+#han8 {
+  position: absolute;
+  font-size: 12px;
+  top : 100px;
+  left: 367px;
+  color: #ffffff;
+}
+
+#sol1 {
+  position: relative;
+  transform: translateY(70px);
+  border: 1px solid #94AAF1;
+}
+
+#sol2 {
+  position: relative;
+  transform: translateX(213px);
+  bottom : 3px;
+  width: 0px;
+  height: 138px;
+  border: 1px solid #94AAF1;
+}
+
+#sol3 {
+  position: relative;
+  left: 105px;
+  bottom: 143px;
+  width: 0px;
+  height: 138px;
+  border: 1px solid #94AAF1;
+}
+
+#sol4 {
+  position: relative;
+  bottom : 283px;
+  left : 320px;
+  width: 0px;
+  height: 138px;
+  border: 1px solid #94AAF1;
+}
+
+#rside {
+  position: absolute;
+  width: 275px;
+  height: 580px;
+  left: 68px;
+  bottom: 20px;
+  background-color: #575C74;
+  margin-top: 20px;
+  margin-right: 20px;
+  transform: translateX(-20px);
+  border-radius: 10px;
+}
+
+#rside_name {
+  width: 275px;
+  height: 25px;
+  background-color: #070E30;
+}
+
+#rside_name2 {
+  position: relative;
+  color: white; /* 폰트 색 바꾸는 법ㅠ */
+  font-size: 12px;
+  width: 275px;
+  height: 25px;
+  top : 7px;
+  left: 15px;
+  background-color: #a7b0df00;
+}
+
+#student1 {
+  position: relative;
+  color: white; /* 폰트 색 바꾸는 법ㅠ */
+  font-size: 12px;
+  width: 275px;
+  height: 25px;
+  top : 7px;
+  left: 15px;
+  background-color: #a7b0df00;
+}
+
+#student2 {
+  position: relative;
+  color: white; /* 폰트 색 바꾸는 법ㅠ */
+  font-size: 12px;
+  width: 275px;
+  height: 25px;
+  top : 7px;
+  left: 15px;
+  background-color: #a7b0df00;
+}
+
+#student3 {
+  position: relative;
+  color: white; /* 폰트 색 바꾸는 법ㅠ */
+  font-size: 12px;
+  width: 275px;
+  height: 25px;
+  top : 7px;
+  left: 15px;
+  background-color: #a7b0df00;
+}
+
+#student4 {
+  position: relative;
+  color: white; /* 폰트 색 바꾸는 법ㅠ */
+  font-size: 12px;
+  width: 275px;
+  height: 25px;
+  top : 7px;
+  left: 15px;
+  background-color: #a7b0df00;
+}
+
+#lside {
+  position: absolute;
+  width: 275px;
+  height: 180px;
+  bottom: 20px; /*아래에서 20 차이 나도록 배치하라는 의미*/
+  right: 48px; /* 오른쪽에 배치 */
+  background-color: #575C74;
+  border-radius: 10px;
+}
+
+#lside_name {
+  width: 275px;
+  height: 25px;
+  background-color: #070E30;
+}
+
+
+#lside2 {
+  position: absolute;
+  width: 275px;
+  height: 180px;
+  top: 120px;
+  right: 48px; /* 오른쪽에 배치 */
+  background-color: #575C74;
+  border-radius: 10px;
+}
+
+#lside_name2 {
+  width: 275px;
+  height: 25px;
+  background-color: #070E30;
+}
+
+
+#lside3 {
+  position: absolute;
+  width: 275px;
+  height: 180px;
+  top: 325px;
+  right: 48px; /* 오른쪽에 배치 */
+  background-color: #575C74;
+  border-radius: 10px;
+}
+
+#lside_name3 {
+  width: 275px;
+  height: 25px;
+  background-color: #070E30;
+}
+
+
+
+#bottom iframe { /*영상 조절*/
+  margin-top: 15px;
+  margin-left: 15px;
+}
+
+.CameraScreenGrid iframe {
+  width: 240px; /* 너비 조절 */
+  height: 120px;
+  margin-left: 18px;
+  margin-top: 17px;
+}
+
+
+.CameraScreenGrid2 iframe {
+  width: 240px; /* 너비 조절 */
+  height: 120px;
+  margin-left: 18px;
+  margin-top: 17px;
+}
+
+
+.CameraScreenGrid3 iframe {
+  width: 240px; /* 너비 조절 */
+  height: 120px;
+  margin-left: 18px;
+  margin-top: 17px;
+}
+
+#bottom {
+  position: absolute;
+  left: 350px;
+  bottom : 20px;
+  width: 600px;
+  height: 290px;
+  background-color: #575C74;
+  border-radius: 10px;
+}
+
+#bottom_name {
+  width: 600px;
+  height: 25px;
+  background-color: #070E30;
+}
+
+#footer {
+  width: 1200px;
+  height: 100px;
+  background-color: #20222B;
+  clear: both;
+  border-radius: 10px;
+}
